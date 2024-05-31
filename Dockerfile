@@ -1,7 +1,5 @@
-FROM FROM ubi8/s2i-core:1
-
-EXPOSE 8080
+FROM registry.redhat.io/rhel8/httpd-24
 
 COPY index.html /var/www/html
 
-CMD ["/usr/bin/run-httpd"]
+CMD run-httpd
