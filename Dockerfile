@@ -1,8 +1,8 @@
-# Use the minimal Nginx image from Docker Hub
-FROM nginx:alpine
+# Use the official Nginx image from Docker Hub
+FROM nginx:latest
 
 # Set up a non-root user and group
-RUN addgroup -S nginxgroup && adduser -S nginxuser -G nginxgroup
+RUN groupadd -r nginxgroup && useradd -r -g nginxgroup nginxuser
 
 # Ensure the required directories have the correct permissions
 RUN mkdir -p /var/cache/nginx/client_temp && \
