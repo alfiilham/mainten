@@ -1,4 +1,4 @@
-FROM registry.connect.redhat.com/rhel8/httpd-24
+FROM registry.redhat.com/rhel8/httpd-24
 
 COPY index.html /var/www/html
 
