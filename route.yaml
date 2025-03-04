@@ -1,0 +1,11 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  name: my-app
+  namespace: devops-practice
+spec:
+  to:
+    kind: Service
+    name: my-app
+  port:
+    targetPort: 8080
