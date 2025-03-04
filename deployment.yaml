@@ -2,7 +2,7 @@ apiVersion: apps.openshift.io/v1
 kind: DeploymentConfig
 metadata:
   name: my-app
-  namespace: devops-practice
+  namespace: fadhle
 spec:
   replicas: 2
   selector:
