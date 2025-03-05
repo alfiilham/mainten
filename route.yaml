@@ -2,7 +2,7 @@ apiVersion: route.openshift.io/v1
 kind: Route
 metadata:
   name: my-app
-  namespace: fadhle
+  namespace: app-tekton
 spec:
   to:
     kind: Service
